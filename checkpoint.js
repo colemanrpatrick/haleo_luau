@@ -1,3 +1,6 @@
+// var documentHeight = document.documentElement.scrollTop || window.scrollY || window.pageYOffset || document.body.scrollTop;
+
+
 
 var checkpointFirst = document.getElementById("checkpoint-first");
 
@@ -14,7 +17,7 @@ window.onscroll = function(){
 
   var checkpointFirstBottom = checkpointFirst.clientHeight;
 
-  if (document.documentElement.scrollTop < checkpointFirstBottom) {
+  if (window.scrollY < checkpointFirstBottom) {
 
     checkpointFirst.classList = "checkpoint-first active";
 
@@ -30,7 +33,7 @@ window.onscroll = function(){
 
     var checkpointBottom = checkpoint[i].offsetTop + (checkpoint[i].clientHeight / 2);
 
-    if (document.documentElement.scrollTop > checkpointHeight && document.documentElement.scrollTop < checkpointBottom) {
+    if (window.scrollY > checkpointHeight && window.scrollY < checkpointBottom) {
 
       checkpoint[i].classList = "checkpoint active";
 
