@@ -1,7 +1,6 @@
 console.log("main.js ready")
 /*==== vars ====*/
-var menuBtn = document.getElementById("menu-btn"),
-    phoneBtn = document.getElementById("phone-btn");
+var menuBtn = document.getElementById("menu-btn");
 /*======= ============= =========*/
 
 /*==== events ====*/
@@ -9,14 +8,10 @@ function menuEvent(){
   toggleThis(this,'active');
   idToggle('main-nav','active');
 }
-function phoneEvent(){
-  idToggle('phone','active')
-}
 /*======= ============= =========*/
 
 /*==== events listeners ====*/
 menuBtn.addEventListener("click",menuEvent,false);
-phoneBtn.addEventListener("click",phoneEvent,false);
 /*======= ============= =========*/
 
 /*======= product detail =========*/
