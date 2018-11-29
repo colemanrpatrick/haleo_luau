@@ -450,7 +450,7 @@ body.active::after{
   text-align: center;
   padding-top: 2em;
   padding-bottom: 2em;
-  background-image: url("images/bgmain.png");
+  background-image: url("images/bgMain.png");
 }
 .header h2{
   text-align: center;
@@ -662,7 +662,7 @@ body.active::after{
 }
 
 #article-first .article-img section {
-  background-image: url("images/haleo_2.jpg");
+  background-image: url("images/Haleo_2.jpg");
   background-size: cover;
   background-position: center left;
 }
@@ -891,7 +891,7 @@ body.active::after{
 }
 /*========*/
 footer{
-  background-color: #64669d;
+  background-color: #292962;
 }
 footer ul{
   display: table;
